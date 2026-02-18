@@ -1,0 +1,80 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-slate-50 text-slate-900 overflow-x-hidden selection:bg-emerald-100 selection:text-emerald-900">
+		<nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
+			<div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+				<div class="flex items-center gap-2">
+					<div class="w-9 h-9 bg-emerald-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+					</div>
+					<span class="text-xl font-extrabold tracking-tight text-emerald-900">Solat Kids</span>
+				</div>
+				<div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+					<a href="#features" class="hover:text-emerald-600 transition-colors">Features</a>
+					<a href="#how-to-use" class="hover:text-emerald-600 transition-colors">How to Use</a>
+					<a href="#preview" class="hover:text-emerald-600 transition-colors">App Preview</a>
+				</div>
+				<a href="https://solat-kids-5wuwm8x29-stardaus-projects.vercel.app/" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg text-sm">
+					Launch App
+				</a>
+			</div>
+		</nav>
+		<slot />
+		<footer class="py-20 bg-slate-900 text-slate-500">
+			<div class="max-w-6xl mx-auto px-6 flex flex-col items-center">
+				<div class="flex items-center gap-3 mb-8">
+					<div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white font-bold italic">S</div>
+					<span class="text-white text-2xl font-black tracking-tighter">Solat Kids</span>
+				</div>
+				<p class="max-w-md text-center text-sm leading-relaxed mb-12">
+					The gentle reminder turned into a fun daily journey for kids and a simple tool for parents.
+				</p>
+				<div class="flex gap-8 text-xs font-bold uppercase tracking-widest mb-12">
+					<a href="#how-to-use" class="hover:text-white transition-colors">Tutorial</a>
+					<a href="#features" class="hover:text-white transition-colors">Features</a>
+					<a href="https://solat-kids-5wuwm8x29-stardaus-projects.vercel.app/" target="_blank" class="hover:text-white transition-colors">App</a>
+				</div>
+				<div class="text-[10px] opacity-50 border-t border-slate-800 pt-8 w-full text-center">
+					&copy; 2026 SOLAT KIDS PROJECT. ALL RIGHTS RESERVED. <br>
+					BUILT LOCALLY. NO TRACKING. NO CLOUD.
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+<style is:global>
+	:root {
+		scroll-behavior: smooth;
+	}
+	.hero-gradient {
+		background: radial-gradient(circle at top right, #f0fdf4 0%, #ffffff 100%);
+	}
+	.islamic-pattern {
+		background-color: #ffffff;
+		background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+	}
+	.phone-frame {
+		box-shadow: 0 0 0 12px #1e293b, 0 20px 50px -10px rgba(0,0,0,0.3);
+	}
+	.app-shadow {
+		box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	}
+</style>

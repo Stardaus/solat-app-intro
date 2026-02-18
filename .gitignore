@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Astro internal cache
+.astro/
+
+# Operating system files
+.DS_Store
+Thumbs.db

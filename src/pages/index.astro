@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Solat Kids — Gamified Prayer Tracker for Children">
+	<main>
+		<!-- Hero Section -->
+		<section class="pt-32 pb-20 px-6 hero-gradient relative">
+			<div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+				<div class="flex-1 text-center lg:text-left">
+					<div class="inline-flex items-center gap-2 px-4 py-2 mb-6 text-xs font-bold tracking-widest uppercase bg-emerald-100 text-emerald-700 rounded-full">
+						<span class="relative flex h-2 w-2">
+							<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+							<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+						</span>
+						New: Multi-Child Support
+					</div>
+					<h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-[1.05] mb-6">
+						Prayer time is now <span class="text-emerald-600">Quest time</span>.
+					</h1>
+					<p class="text-xl text-slate-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+						A parent-controlled gamified system that rewards your children for building a consistent solat habit. Offline-first, secure, and fun.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+						<a href="https://solat-kids-5wuwm8x29-stardaus-projects.vercel.app/" target="_blank" class="px-10 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold text-lg shadow-xl shadow-emerald-200 transition-all transform hover:-translate-y-1 text-center">
+							Start for Free
+						</a>
+						<a href="#how-to-use" class="px-10 py-4 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 rounded-2xl font-bold text-lg transition-all text-center">
+							How to Use
+						</a>
+					</div>
+					<div class="mt-10 flex items-center justify-center lg:justify-start gap-6 text-sm font-medium text-slate-400">
+						<div class="flex items-center gap-1.5"><svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 100% Privacy</div>
+						<div class="flex items-center gap-1.5"><svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Zero Ads</div>
+						<div class="flex items-center gap-1.5"><svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Local Data</div>
+					</div>
+				</div>
+				
+				<div class="flex-1 w-full max-w-[340px] lg:max-w-sm mx-auto">
+					<img src="/solat-app-intro/images/Front-page.png" alt="Solat Kids Home Screen" class="rounded-[3rem] shadow-2xl phone-frame border-8 border-slate-900" />
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Overview -->
+		<section id="features" class="py-24 bg-white islamic-pattern">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="text-center mb-20">
+					<h2 class="text-4xl font-black text-slate-900 mb-6">Built for Modern Muslim Families</h2>
+					<p class="text-slate-500 max-w-2xl mx-auto text-lg leading-relaxed">
+						Designed with psychological rewards in mind, Solat Kids creates a positive loop of spiritual growth and consistent habits.
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
+						<div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">🦁</div>
+						<h3 class="text-lg font-bold mb-3">Multi-Profile</h3>
+						<p class="text-slate-500 text-sm leading-relaxed">Separate trackers for every child. Each with their own avatars, points, and level progress.</p>
+					</div>
+					<div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
+						<div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">⚙️</div>
+						<h3 class="text-lg font-bold mb-3">Custom Pointing</h3>
+						<p class="text-slate-500 text-sm leading-relaxed">Parents decide how many points each prayer is worth. Increase value for harder times like Subuh!</p>
+					</div>
+					<div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
+						<div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">📝</div>
+						<h3 class="text-lg font-bold mb-3">Extra Chores</h3>
+						<p class="text-slate-500 text-sm leading-relaxed">Add up to 3 custom chores like Fasting or Tadarus to the daily quest board.</p>
+					</div>
+					<div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
+						<div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">🎁</div>
+						<h3 class="text-lg font-bold mb-3">Reward Shop</h3>
+						<p class="text-slate-500 text-sm leading-relaxed">Redeem points for real-life rewards defined by you. From toys to extra screen time.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- How to Use Tutorial -->
+		<section id="how-to-use" class="py-24 bg-slate-50">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="text-center mb-20">
+					<h2 class="text-4xl font-black text-slate-900 mb-6">How to Use Solat Kids</h2>
+					<p class="text-slate-500 max-w-2xl mx-auto text-lg leading-relaxed">
+						A simple step-by-step guide for parents and children to get started.
+					</p>
+				</div>
+
+				<div class="space-y-32">
+					<!-- Step 1 -->
+					<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+						<div class="flex-1 order-2 lg:order-1">
+							<div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-lg">1</div>
+							<h3 class="text-3xl font-bold text-slate-900 mb-6">Create Your Child's Profile</h3>
+							<p class="text-slate-600 text-lg leading-relaxed mb-6">
+								Start by adding a profile for each child. Choose a name and a fun avatar to personalize their experience.
+							</p>
+							<div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+								<h4 class="font-bold text-slate-800 mb-2">Pro Tip:</h4>
+								<p class="text-slate-500 text-sm">You can manage all profiles from the Parent Dashboard, protected by your secret PIN. <strong>The default PIN is 0000.</strong></p>
+							</div>
+						</div>
+						<div class="flex-1 order-1 lg:order-2">
+							<img src="/solat-app-intro/images/parent-dashboard-profiles.png" alt="Profile Creation" class="rounded-3xl shadow-xl border border-slate-200" />
+						</div>
+					</div>
+
+					<!-- Step 2 -->
+					<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+						<div class="flex-1">
+							<img src="/solat-app-intro/images/parent-dashboard-config.png" alt="Prayer Configuration" class="rounded-3xl shadow-xl border border-slate-200" />
+						</div>
+						<div class="flex-1">
+							<div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-lg">2</div>
+							<h3 class="text-3xl font-bold text-slate-900 mb-6">Configure Prayer Points</h3>
+							<p class="text-slate-600 text-lg leading-relaxed mb-6">
+								Parents have full control over the reward system. Set how many points each prayer is worth. You can reward more points for challenging prayers like Subuh!
+							</p>
+						</div>
+					</div>
+
+					<!-- Step 3 -->
+					<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+						<div class="flex-1 order-2 lg:order-1">
+							<div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-lg">3</div>
+							<h3 class="text-3xl font-bold text-slate-900 mb-6">Swipe to Complete Quests</h3>
+							<p class="text-slate-600 text-lg leading-relaxed mb-6">
+								Children see their daily prayers as quests. When a prayer is finished, they simply swipe the card to mark it as completed.
+							</p>
+						</div>
+						<div class="flex-1 order-1 lg:order-2">
+							<img src="/solat-app-intro/images/solat-claim.png" alt="Swiping Quest" class="rounded-3xl shadow-xl border border-slate-200" />
+						</div>
+					</div>
+
+					<!-- Step 4 -->
+					<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+						<div class="flex-1">
+							<img src="/solat-app-intro/images/parent-dashboard-approval.png" alt="Approval Queue" class="rounded-3xl shadow-xl border border-slate-200" />
+						</div>
+						<div class="flex-1">
+							<div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-lg">4</div>
+							<h3 class="text-3xl font-bold text-slate-900 mb-6">Parent Approval</h3>
+							<p class="text-slate-600 text-lg leading-relaxed mb-6">
+								Completions are sent to the Parent Dashboard for verification. Once you approve, your child earns their points and XP!
+							</p>
+						</div>
+					</div>
+
+					<!-- Step 5 -->
+					<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+						<div class="flex-1 order-2 lg:order-1">
+							<div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-lg">5</div>
+							<h3 class="text-3xl font-bold text-slate-900 mb-6">Redeem Fun Rewards</h3>
+							<p class="text-slate-600 text-lg leading-relaxed mb-6">
+								Accumulated points can be spent in the Reward Shop. Children can "buy" real-world rewards that you've set up, like extra screen time or a special treat.
+							</p>
+						</div>
+						<div class="flex-1 order-1 lg:order-2">
+							<img src="/solat-app-intro/images/reward-shop.png" alt="Reward Shop" class="rounded-3xl shadow-xl border border-slate-200" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Security & Privacy -->
+		<section class="py-24 bg-emerald-900 text-white relative overflow-hidden">
+			<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+				<div class="w-20 h-20 bg-white/10 rounded-3xl flex items-center justify-center text-4xl mb-8 mx-auto backdrop-blur-md">🔒</div>
+				<h2 class="text-4xl font-black mb-6">Parental Control & Privacy</h2>
+				<p class="text-emerald-100 text-lg leading-relaxed mb-10">
+					Solat Kids uses a secure PIN system to protect the Parent Dashboard. The default PIN is <strong>0000</strong>. All data is stored **locally on your device**. No accounts, no servers, and 100% offline.
+				</p>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<img src="/solat-app-intro/images/parent-access-pwd.png" alt="PIN Protection" class="rounded-3xl shadow-2xl border-4 border-emerald-800" />
+					<img src="/solat-app-intro/images/parent-dashboard-settings.png" alt="Settings Panel" class="rounded-3xl shadow-2xl border-4 border-emerald-800" />
+				</div>
+			</div>
+			<!-- Background Decoration -->
+			<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+			<div class="absolute -left-10 top-10 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
+		</section>
+
+		<!-- CTA -->
+		<section id="preview" class="py-24 bg-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-4xl font-black text-slate-900 mb-8">Ready to turn prayer time into a fun journey?</h2>
+				<div class="flex flex-col sm:flex-row gap-6 justify-center">
+					<a href="https://solat-kids-5wuwm8x29-stardaus-projects.vercel.app/" target="_blank" class="px-12 py-5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-black text-xl shadow-xl shadow-emerald-200 transition-all transform hover:-translate-y-1">
+						Launch Solat Kids Now
+					</a>
+				</div>
+				<p class="mt-8 text-slate-400 font-medium">No signup required. Works directly in your browser.</p>
+			</div>
+		</section>
+	</main>
+</Layout>
